@@ -21,7 +21,8 @@ export default {
   data() {
     return {
       //baseURL: "http://localhost:3000",
-      baseURL:"https://ecommerce-backend-project-fynd.herokuapp.com",
+      //baseURL:"https://ecommerce-backend-project-fynd.herokuapp.com",
+      baseURL: "https://ecommerce-backend-project-vc.herokuapp.com",
       categories: null,
       products: null,
       cartItemCount: 0,

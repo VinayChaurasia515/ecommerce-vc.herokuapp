@@ -1,4 +1,5 @@
 <template>
+  <h1>{{paymentOption}}</h1>
   <div class="container" style="background-color: #f2f2f2">
     <div v-if="token">
       <div v-if="token && cartItems.totalPrice > 0">

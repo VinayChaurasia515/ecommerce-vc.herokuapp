@@ -15,7 +15,7 @@
     <p>
       Go to
 
-      <a href="https://advance-vmart.herokuapp.com/"> advance-vmart </a>
+      <a href="https://ecommerce-vc.herokuapp.com"> advance-vmart </a>
       Home Page
     </p>
   </div>

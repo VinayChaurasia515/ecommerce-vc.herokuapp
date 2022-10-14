@@ -1,5 +1,6 @@
 <template>
   <div class="container pt-4">
+    <!-- <p>{{category}}</p> -->
     <div class="row">
       <div class="col-md-1 col-lg-1"></div>
       <div class="col-12 col-md-4">
@@ -7,14 +8,15 @@
       </div>
       <div class="col-12 col-md-6 col-12 pt-3 pt-md-0">
         <h4>{{ product.name }}</h4>
-        <h6 class="category font-italic">
-          Category : {{ category.categoryName }}
-        </h6>
-        <h6 class="font-weight-bold">
+        
+        <h6 class="font-weight-bold mx-1" style="text-align:left">
           Price :
           <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
           {{ product.price }}
         </h6>
+        <h5  style="text-align:left">
+          Product Description :
+        </h5>
         <p>{{ product.description }}</p>
 
         <div class="d-flex flex-row justify-content-between">
@@ -34,6 +36,13 @@
               Add to cart
             </button>
           </div>
+        </div>
+
+        <div class="mt-3" style="text-align:left">
+          <h6 class="category">
+          Category : {{ category.categoryName }}
+        </h6>
+        <p >Category Description : {{category.categoryDescription}}</p>
         </div>
 
         <div class="features pt-3">
@@ -67,9 +76,14 @@
             </li>
           </ul>
         </div>
+
       </div>
       <div class="col-md-1 col-lg-1"></div>
     </div>
+  </div>
+  <div>
+   
+
   </div>
 </template>
 
