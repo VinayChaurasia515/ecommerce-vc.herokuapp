@@ -3,23 +3,23 @@
     <h5>Update Profile</h5>
     <div class="dropdown-divider"></div>
     <form>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Name</label>
         <input type="text" class="form-control" v-model="name" />
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Email</label>
         <input type="email" class="form-control" v-model="email" />
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Role</label>
         <input type="text" class="form-control" v-model="role" disabled />
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Id</label>
         <input type="text" class="form-control" v-model="id" disabled />
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Image Url</label>
         <input
           type="text"

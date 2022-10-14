@@ -3,15 +3,15 @@
     <h5>Change Password</h5>
     <div class="dropdown-divider"></div>
     <form>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Old Password</label>
         <input type="password" class="form-control" v-model="oldPassword" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>New Password</label>
         <input type="password" class="form-control" v-model="newPassword" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-3">
         <label>Confirm Password</label>
         <input type="password" class="form-control" v-model="confirmPassword" required />
       </div>
