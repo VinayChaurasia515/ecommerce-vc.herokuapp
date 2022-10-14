@@ -66,7 +66,7 @@ export default {
           swal({
             title: "Password Changed",
           });
-          return this.$router.push({ name: "ViewProfile" });
+          return this.$router.push({ name: "Home" });
         })
         .catch((err) => {
           console.log(">>>", err.response.data.error);

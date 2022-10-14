@@ -97,7 +97,8 @@ export default {
             title: "Profile Updated",
           });
           localStorage.setItem("userName", res.data.newUserData.name);
-          this.$router.push({ name: "ViewProfile" });
+        //  this.$router.push({ name: "ViewProfileAdmin" });
+        this.$router.push({ name: "Home" });
         })
         .catch((err) => {
           console.log("Error :: ", err);
