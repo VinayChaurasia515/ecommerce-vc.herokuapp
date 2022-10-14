@@ -7,14 +7,24 @@
         <img :src="productUrl" class="img-fluid" />
       </div>
       <div class="col-12 col-md-6 col-12 pt-3 pt-md-0">
-        <h4>{{ product.name }}</h4>
+        <h4 class="">{{ product.name }}</h4>
         
         <h6 class="font-weight-bold mx-1" style="text-align:left">
           Price :
           <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
           {{ product.price }}
         </h6>
-        <h5  style="text-align:left">
+        
+        <div style="float: left">
+        4.5
+        <i
+          class="fa fa-star checked"
+          style="color: #ffd700"
+          aria-hidden="true"
+        ></i>
+        </div>
+        <br>
+        <h5 class="mt-2" style="text-align:left">
           Product Description :
         </h5>
         <p>{{ product.description }}</p>

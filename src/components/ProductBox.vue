@@ -21,14 +21,23 @@
         <i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>
         {{ product.price }}
       </p>
-      <p class="card-text">
+      <!-- <p class="card-text">
         Rating ::
         {{ product.ratings }}
-      </p>
-      <!-- <router-link :to="{ name: 'EditProduct', params: { id: product._id } } "
-       v-show="$route.name==='AdminProduct'">
-        <button class="btn btn-primary">Edit</button>
-      </router-link> -->
+      </p> -->
+      <span style="float: left">
+        4.5
+        <i
+          class="fa fa-star checked"
+          style="color: #ffd700"
+          aria-hidden="true"
+        ></i>
+      </span>
+
+      <span style="float: right;color: #04c1d7;"
+        ><i class="fa fa-heart" aria-hidden="true"></i>
+      </span>
+
       <div class="d-flix justify-align">
         <router-link
           :to="{ name: 'EditProduct1', params: { id: product._id } }"
@@ -79,7 +88,7 @@ export default {
           swal({
             title: "Product Deleted",
           });
-          
+
           return this.$router.push({ name: "ViewProduct" });
         })
         .catch((err) => {

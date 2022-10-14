@@ -137,26 +137,27 @@ export default {
     searchProducts() {
       console.log(`${this.baseURL}/products`);
       if (this.keyword === null) {
-        axios
-          .get(`${this.baseURL}/products`, {
-            headers: {
-              "Content-Type": "multipart/form-data",
-              "Access-Control-Allow-Origin": "*",
-              "Content-type": "application/json",
-              Accept: "application/json",
-              token: localStorage.getItem("token"),
-            },
-          })
-          .then((res) => {
-            console.log("if ", res);
+        // axios
+        //   .get(`${this.baseURL}/products`, {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //       "Access-Control-Allow-Origin": "*",
+        //       "Content-type": "application/json",
+        //       Accept: "application/json",
+        //       token: localStorage.getItem("token"),
+        //     },
+        //   })
+        //   .then((res) => {
+        //     console.log("if ", res);
 
-            this.$router.push({
-              name: "SearchProduct",
-            });
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+        //     this.$router.push({
+        //       name: "SearchProduct",
+        //     });
+        //   })
+        //   .catch((err) => {
+        //     console.log(err);
+        //   });
+        return;
       } else {
         console.log(`${this.baseURL}/products?keyword=${this.keyword}`);
         axios
